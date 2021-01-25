@@ -35,3 +35,9 @@
   when:
     - common__enable_httpd
     - ansible_distribution == 'CentOS'
+# - name: install pip3
+#   yum: name=python3-pip state=present 
+- name: Install molecule
+  pip:
+    executable: pip3
+    name: molecule

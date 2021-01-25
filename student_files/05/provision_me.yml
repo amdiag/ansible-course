@@ -11,6 +11,7 @@
   roles:
     - role: users
     - role: common
+    - role: snmp
     - role: game2048
   post_tasks:
     - name: Print message
